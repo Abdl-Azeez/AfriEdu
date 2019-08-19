@@ -14,14 +14,12 @@
 body{
 	font-family: sans-serif;
 }
-nav{
+/* nav{
 	position: relative;
 	height: 10vh;
 	width: 100%;
 	background: var(--nav-color);
 	transition: all 1s ease-out;
-	display: flex;
-	align-items: center;
 }
 
 ul{
@@ -30,7 +28,8 @@ ul{
 	height: 100%;
 	margin-left: auto;
 	/*margin-left:auto; *//*Make it go to the right*/
-	/*margin-right:auto;*/ /*Make it go to the left*/
+	/*margin-right:auto;*/ /*Make it go to the left
+
 	padding: 0;
 	transition: all 1s ease-in;
 	font-size:14px;
@@ -53,9 +52,9 @@ ul li a {
 }
 nav .sec{
 	margin-right: auto;
-}
+} */
 .sec1{
-	background: url('https://africacheck.org/wp-content/uploads/2013/09/000_ARP36353341.jpg');
+	/* background: url('https://africacheck.org/wp-content/uploads/2013/09/000_ARP36353341.jpg'); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -65,12 +64,12 @@ nav .sec{
 
 @media screen and (max-width: 768px){
 	.hamburger{
-		position: absolute;
+		position: relative;
 		cursor: pointer;
 		right: 5%;
 		top: 50%;
 		float: right;	
-		transform: translate(-5%, -50%);
+		/* transform: translate(-5%, -50%); */
 	}
 
 	.line{
@@ -82,7 +81,7 @@ nav .sec{
 		transition: all 0.5s linear;	
 	}
 
-	ul li{
+	/* ul li{
 		opacity: 0;
 		display: none;
 	}
@@ -98,7 +97,7 @@ nav .sec{
 		text-align: center;
 	}
 
-	nav.active ul li:nth-child(1){
+	/* nav.active ul li:nth-child(1){
 		transition: all .3s ease-in;
 	}
 	nav.active ul li:nth-child(2){
@@ -112,7 +111,7 @@ nav .sec{
 	}
 	nav.active ul li:nth-child(5){
 		transition: all .11s ease-in;
-	}
+	} 
 
 	nav.active ul li.fade{
 		opacity: 1;
@@ -122,13 +121,13 @@ nav .sec{
 
 
 
-	nav.active .hamburger{
+	/* nav.active .hamburger{
 		transform: translate(-5%, 50%);
-	}
+	} 
 	nav.active .line:nth-child(1){
 		width: 17px;
 	}
 	nav.active .line:nth-child(2){
 		width: 25px;
-	}
+	} */
 }
