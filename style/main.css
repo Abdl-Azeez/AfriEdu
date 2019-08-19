@@ -3,6 +3,7 @@
 	--nav-color:#4b78a7;
 	--nav-hover-color:#4b658e;
 	--text-color:#fff;
+	--default-color: #000;
 
 }
 
@@ -14,23 +15,22 @@
 body{
 	font-family: sans-serif;
 }
-/* nav{
+nav{
 	position: relative;
-	height: 10vh;
+	height: auto;
 	width: 100%;
 	background: var(--nav-color);
 	transition: all 1s ease-out;
 }
 
 ul{
-	width: 50%;
+	/* width: 50%; */
 	text-align: center;
 	height: 100%;
 	margin-left: auto;
 	/*margin-left:auto; *//*Make it go to the right*/
-	/*margin-right:auto;*/ /*Make it go to the left
-
-	padding: 0;
+	/*margin-right:auto;*/ /*Make it go to the left*/
+	/* padding: 0; */
 	transition: all 1s ease-in;
 	font-size:14px;
 }
@@ -39,22 +39,32 @@ ul li{
 	list-style: none;
 	height: inherit;
 	display: inline-block;
-	padding: 20px;
+	/* padding: 20px; */
 }
 
-ul li:hover{
-	background: var(--nav-hover-color);
-}
 
 ul li a {
 	color: var(--text-color);
 	text-decoration: none; 
 }
-nav .sec{
-	margin-right: auto;
-} */
+.navbar-brand span{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 40px;
+}
+
+.navbar-brand{
+	font-family: 'Comfortaa', cursive;
+}
+
+.navbar-brand i{
+	width: 10px;
+    background: forestgreen;
+    height: 10px;
+    display: inline-block;
+    margin: 0 0 -5px 5px;
+}
 .sec1{
-	/* background: url('https://africacheck.org/wp-content/uploads/2013/09/000_ARP36353341.jpg'); */
+	background: url('https://africacheck.org/wp-content/uploads/2013/09/000_ARP36353341.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -62,12 +72,14 @@ nav .sec{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
 	.hamburger{
 		position: relative;
+		margin-left: auto;
+		margin-right: 0px; 
 		cursor: pointer;
 		right: 5%;
-		top: 50%;
+		/* top: 50%; */
 		float: right;	
 		/* transform: translate(-5%, -50%); */
 	}
@@ -75,13 +87,16 @@ nav .sec{
 	.line{
 		width:30px;
 		height: 4px;
-		background: var(--text-color);
+		background: var(--default-color);
 		margin: 5px;
 		border-radius: 5px;
 		transition: all 0.5s linear;	
 	}
-
-	/* ul li{
+	ul{
+		margin-left: 0;
+		display: none;
+	}
+	ul li{
 		opacity: 0;
 		display: none;
 	}
@@ -90,14 +105,18 @@ nav .sec{
 	}
 	nav.active ul{
 		width: 100%;
-		padding-top: 50px;
+		/* padding-top: 50px; */
+	}
+	
+	nav.active ul{
+		display: block;
 	}
 	nav.active ul li{
 		display: block;
 		text-align: center;
 	}
 
-	/* nav.active ul li:nth-child(1){
+	nav.active ul li:nth-child(1){
 		transition: all .3s ease-in;
 	}
 	nav.active ul li:nth-child(2){
@@ -123,11 +142,11 @@ nav .sec{
 
 	/* nav.active .hamburger{
 		transform: translate(-5%, 50%);
-	} 
+	} */
 	nav.active .line:nth-child(1){
 		width: 17px;
 	}
 	nav.active .line:nth-child(2){
 		width: 25px;
-	} */
+	}
 }

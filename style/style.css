@@ -11,9 +11,6 @@
     border-bottom: 1px solid #c4d114 !important;
     background-color: #f8f9fa00 !important;
 }
-.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
-    color: #fff;
-}
 
 li.nav-item {
     margin: 0 1em;

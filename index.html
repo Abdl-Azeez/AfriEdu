@@ -2,11 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Nav bar with hamburger</title>
+	<title>AfriRise</title>
 	<link rel="stylesheet" type="text/css" href="/style/main.css">
 	<link rel="stylesheet" type="text/css" href="/style/bootstrap.min.css">
 	<link rel="stylesheet" href="/style/font-awesome.min.css">
 	<link rel="stylesheet" href="/style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Comfortaa|Oswald&display=swap" rel="stylesheet">
 	<script src="/script/jquery.js"></script>
 	<script src="/script/bootstrap.min.js"></script>
 	<script src="/script/script.js"></script>
@@ -15,29 +16,45 @@
 	<header>
 		<div class="navigation-bar">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<a class="navbar-brand" href="index.html"><span>A</span>fri<span>R</span>ise.</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-		
-				<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="services.html">Services</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="projects.html">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
-						</li>
-					</ul>
+				<a class="navbar-brand" href="index.html"><span>A</span>fri<span>R</span>ise<i></i></a>
+				<div class="hamburger menu">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
 				</div>
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="projects.html">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				</ul>
    			</nav>
    		</div>
-   	</header>
+	   </header>
+	   <main>
+		   <section class="sec">
+
+		   </section>
+	   </main>
+<script>
+const hamburger= document.querySelector('.menu');
+const navLink = document.querySelector('nav');
+const Links = document.querySelectorAll('ul li');
+
+hamburger.addEventListener('click',()=> {
+    navLink.classList.toggle('active');
+    Links.forEach(link => {
+        link.classList.toggle('fade');
+    });
+});
+</script>
 </body>
 </html>
