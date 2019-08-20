@@ -59,7 +59,7 @@ ul li a {
 
 .navbar-brand i{
 	width: 10px;
-    background: forestgreen;
+    background: #0e3c1c;
     height: 10px;
     display: inline-block;
     margin: 0 0 -5px 5px;
@@ -71,7 +71,78 @@ ul li a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
+
+.sec1 .banner{
+	margin: 0 auto;
+	text-align: center;
+	color: black;
+	text-shadow: 2px 2px 2px #485b6a;
+	font-family: 'Montserrat', cursive;
+	font-size: 25px;
+}
+.sec1 .banner span{
+	color: #334037;
+    text-shadow: 3px 3px 3px #485b6a;
+	font-size: 60px;
+	letter-spacing: 4px;
+	font-weight: 500;
+	font-family: 'Poppins', cursive;
+}
+.subBanner{
+	margin: 0 auto;
+	font-family: 'Montserrat', cursive;
+	font-size: 20px;
+	text-align: justify;
+	color:black;
+	text-shadow: 2px 1px 3px white;
+	/* display: flex; */
+	vertical-align: middle;
+}
+
+.subBanner input{
+	background: #edebee;
+	text-align: center;
+	padding: 8px;
+	width:80%;
+	font-size: 13px;
+	height: 55px;
+	margin: 20px 0;
+	outline: none;
+	outline: none;
+	border: 1px solid #334038;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.subBanner button{
+    /* line-height: 50px!important; */
+	padding: 12px 30px!important;
+	background: #334037;
+	font-size:13px;
+	height: 55px;
+	color: white;
+	position: absolute;
+    margin: 20px auto;
+    outline: none;
+	border-radius: 0;
+	outline:none;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+    transition: 0.25s all ease-in-out;
+}
+.subBanner button:focus,
+.subBanner button:active{
+	outline: transparent;
+	box-shadow: none;
+}
+
+
+
+
 
 
 @media screen and (max-width: 992px){
@@ -101,9 +172,10 @@ ul li a {
 	ul li{
 		opacity: 0;
 		display: none;
+		
 	}
 	nav.active{
-		height: auto;
+		height: 100%;
 	}
 	nav.active ul{
 		width: 100%;
@@ -115,7 +187,6 @@ ul li a {
 	}
 	nav.active ul li{
 		display: block;
-		text-align: center;
 	}
 
 	nav.active ul li:nth-child(1){
