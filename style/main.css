@@ -47,7 +47,7 @@ ul li{
 ul li a {
 	color: var(--default-color) !important;
 	text-decoration: none; 
-	transition: all 1s ease-out;
+	transition: all 0.25s ease-out;
 }
 ul li a:hover{
 	color: rgba(0, 0, 0, 0.6) !important;
