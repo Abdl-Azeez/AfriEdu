@@ -11,7 +11,7 @@ hamburger.addEventListener('click', () => {
 
 let i = 0;
 const text = "October 19, 2019";
-const speed = 500;
+const speed = 200;
 
 function type() {
     let alphabet = text.charAt(i);
