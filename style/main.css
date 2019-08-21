@@ -48,6 +48,9 @@ ul li a {
 	color: var(--default-color) !important;
 	text-decoration: none; 
 }
+ul li a:hover{
+	color: rgba(0, 0, 0, 0.178) !important;
+}
 .navbar-brand span{
 	font-family: 'Berkshire Swash', cursive;
 	font-size: 40px;
@@ -103,7 +106,9 @@ ul li a {
 	/* display: flex; */
 	vertical-align: middle;
 }
-
+#eventDate{
+	transition: all 2s linear;
+}
 .subBanner input{
 	background: #edebee;
 	text-align: center;

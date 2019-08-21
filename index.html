@@ -45,13 +45,13 @@
 	   <main>
 		<section class="sec1">
 			<div class="banner">
-				October 19, 2019<br>
+				<b id="eventDate"></b><br>
 				<span>AfriRise Summit 19</span>
 			</div>
 			<div class="subBanner">
 				Subscibe to us to receive updates about the event<br>
 				<input type="text" placeholder="Enter your email">
-				<button class="btn btn-7 btn-7b icon-envelope">Send</button>
+				<button class="btn">Send</button>
 			</div>
 		</section>
 	   </main>
@@ -66,6 +66,22 @@ hamburger.addEventListener('click',()=> {
         link.classList.toggle('fade');
     });
 });
+
+let i=0;
+const text = "October 19, 2019";
+const speed = 100;
+
+function type() {
+		let alphabet = text.charAt(i);
+
+		document.getElementById("eventDate").innerHTML+=alphabet;
+		i++;
+	setTimeout(type, speed);
+
+};
+
+type();
+
 </script>
 </body>
 </html>
