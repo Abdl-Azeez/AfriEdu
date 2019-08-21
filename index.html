@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>AfriRise</title>
@@ -7,20 +8,23 @@
 	<link rel="stylesheet" type="text/css" href="/style/bootstrap.min.css">
 	<link rel="stylesheet" href="/style/font-awesome.min.css">
 	<link rel="stylesheet" href="/style/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Comfortaa|Cantora+One|Montserrat|Poppins&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Comfortaa|Cantora+One|Montserrat|Poppins&display=swap"
+		rel="stylesheet">
 	<script src="/script/jquery.js"></script>
 	<script src="/script/bootstrap.min.js"></script>
 	<script src="/script/script.js"></script>
 </head>
+
 <body>
 	<header>
 		<div class="navigation-bar">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-expand-lg bg-light">
 				<a class="navbar-brand" href="index.html"><span>A</span>fri<span>R</span>ise<i></i></a>
 				<div class="hamburger menu">
-						<div class="line"></div>
-						<div class="line"></div>
-						<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
 				</div>
 				<ul class="navbar-nav">
 					<li class="nav-item">
@@ -39,10 +43,10 @@
 						<a class="nav-link" href="contact.html">Contact Us</a>
 					</li>
 				</ul>
-   			</nav>
-   		</div>
-	   </header>
-	   <main>
+			</nav>
+		</div>
+	</header>
+	<main>
 		<section class="sec1">
 			<div class="banner">
 				<b id="eventDate"></b><br>
@@ -54,34 +58,34 @@
 				<button class="btn">Send</button>
 			</div>
 		</section>
-	   </main>
-<script>
-const hamburger= document.querySelector('.menu');
-const navLink = document.querySelector('nav');
-const Links = document.querySelectorAll('ul li');
+	</main>
+	<script>
+		const hamburger = document.querySelector('.menu');
+		const navLink = document.querySelector('nav');
+		const Links = document.querySelectorAll('ul li');
 
-hamburger.addEventListener('click',()=> {
-    navLink.classList.toggle('active');
-    Links.forEach(link => {
-        link.classList.toggle('fade');
-    });
-});
+		hamburger.addEventListener('click', () => {
+			navLink.classList.toggle('active');
+			Links.forEach(link => {
+				link.classList.toggle('fade');
+			});
+		});
 
-let i=0;
-const text = "October 19, 2019";
-const speed = 100;
+		let i = 0;
+		const text = "October 19, 2019";
+		const speed = 100;
 
-function type() {
-		let alphabet = text.charAt(i);
+		function type() {
+			let alphabet = text.charAt(i);
 
-		document.getElementById("eventDate").innerHTML+=alphabet;
-		i++;
-	setTimeout(type, speed);
+			document.getElementById("eventDate").innerHTML += alphabet;
+			i++;
+			setTimeout(type, speed);
 
-};
+		};
 
-type();
-
-</script>
+		type();
+	</script>
 </body>
+
 </html>
