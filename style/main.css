@@ -47,9 +47,10 @@ ul li{
 ul li a {
 	color: var(--default-color) !important;
 	text-decoration: none; 
+	transition: all 1s ease-out;
 }
 ul li a:hover{
-	color: rgba(0, 0, 0, 0.178) !important;
+	color: rgba(0, 0, 0, 0.6) !important;
 }
 .navbar-brand span{
 	font-family: 'Berkshire Swash', cursive;
@@ -137,14 +138,17 @@ ul li a:hover{
 	outline:none;
 	border-bottom-right-radius: 15px;
 	border-top-right-radius: 15px;
-    transition: 0.25s all ease-in-out;
+    transition: 0.2s all ease-in-out;
 }
 .subBanner button:focus,
-.subBanner button:active{
+.subBanner button:active,
+.subBanner button:hover{
 	outline: transparent;
 	box-shadow: none;
 }
-
+.subBanner button:hover{
+	background: #102e19;
+}
 
 
 
