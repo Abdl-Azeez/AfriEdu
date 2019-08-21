@@ -24,4 +24,4 @@ function type() {
 
 type();
 
-AOS.init(); 
+AOS.init();

@@ -1,21 +1,32 @@
-:root{
-	--bg-color:#36846e;
-	--nav-color:#4b78a7;
-	--nav-hover-color:#4b658e;
-	--text-color:#fff;
+:root {
+	--bg-color: #36846e;
+	--nav-color: #4b78a7;
+	--nav-hover-color: #4b658e;
+	--text-color: #fff;
 	--default-color: #000;
 
 }
 
-*{
+* {
 	margin: 0;
-	padding:0;
+	padding: 0;
 	box-sizing: border-box;
 }
-body{
+
+body {
 	font-family: sans-serif;
 }
-nav{
+
+.navigation-bar {
+	margin: 0 auto;
+	width: 100%;
+	position: absolute;
+	z-index: 99;
+	text-align: center;
+	padding: 1em 3em;
+}
+
+nav {
 	position: relative;
 	height: auto;
 	width: 100%;
@@ -23,54 +34,60 @@ nav{
 	transition: all 1s ease-out;
 }
 
-ul{
-	/* width: 50%; */
-    text-align: center;
-    height: 100%;
-    margin-left: auto;
-    /* margin-left: auto; */
-    margin-right: 10%;
-    /* padding: 0; */
-    transition: all 1s ease-in;
-    font-size: 14px;
-    font-weight: 600;
+.bg-light {
+	border-bottom: 2px solid #0e3c1c !important;
+	background-color: #f8f9fa00 !important;
 }
 
-ul li{
+ul {
+	/* width: 50%; */
+	text-align: center;
+	height: 100%;
+	margin-left: auto;
+	margin-right: 10%;
+	transition: all 1s ease-in;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+ul li {
+	margin: 0 1em;
 	list-style: none;
 	height: inherit;
 	display: inline-block;
-	/* padding: 20px; */
 }
 
 
 ul li a {
 	color: var(--default-color) !important;
-	text-decoration: none; 
+	text-decoration: none;
 	transition: all 0.25s ease-out;
 }
-ul li a:hover{
+
+ul li a:hover {
 	color: rgba(0, 0, 0, 0.6) !important;
 }
-.navbar-brand span{
+
+.navbar-brand span {
 	font-family: 'Berkshire Swash', cursive;
 	font-size: 40px;
 }
 
-.navbar-brand{
+.navbar-brand {
 	font-family: 'Comfortaa', cursive;
 }
 
-.navbar-brand i{
+.navbar-brand i {
 	width: 10px;
-    background: #0e3c1c;
-    height: 10px;
-    display: inline-block;
-    margin: 0 0 -5px 5px;
+	background: #0e3c1c;
+	height: 10px;
+	display: inline-block;
+	margin: 0 0 -5px 5px;
 }
-.sec1{
+
+.sec1 {
 	/* background: url('https://africacheck.org/wp-content/uploads/2013/09/000_ARP36353341.jpg'); */
-	background: url('/images/adventure.jpg') ;
+	background: url('/images/adventure.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -81,7 +98,7 @@ ul li a:hover{
 	justify-content: center;
 }
 
-.sec1 .banner{
+.sec1 .banner {
 	margin: 0 auto;
 	text-align: center;
 	color: black;
@@ -89,32 +106,36 @@ ul li a:hover{
 	font-family: 'Montserrat', cursive;
 	font-size: 25px;
 }
-.sec1 .banner span{
+
+.sec1 .banner span {
 	color: #334037;
-    text-shadow: 3px 3px 3px #485b6a;
+	text-shadow: 3px 3px 3px #485b6a;
 	font-size: 60px;
 	letter-spacing: 4px;
 	font-weight: 500;
 	font-family: 'Poppins', cursive;
 }
-.subBanner{
+
+.subBanner {
 	margin: 0 auto;
 	font-family: 'Montserrat', cursive;
 	font-size: 20px;
 	text-align: justify;
-	color:black;
+	color: black;
 	text-shadow: 2px 1px 3px white;
 	/* display: flex; */
 	vertical-align: middle;
 }
-#eventDate{
+
+#eventDate {
 	transition: all 2s linear;
 }
-.subBanner input{
+
+.subBanner input {
 	background: #edebee;
 	text-align: center;
 	padding: 8px;
-	width:80%;
+	width: 80%;
 	font-size: 15px;
 	height: 55px;
 	margin: 20px 0;
@@ -124,29 +145,32 @@ ul li a:hover{
 	border-bottom-left-radius: 15px;
 	border-top-left-radius: 15px;
 }
-.subBanner button{
-    /* line-height: 50px!important; */
-	padding: 12px 30px!important;
+
+.subBanner button {
+	/* line-height: 50px!important; */
+	padding: 12px 30px !important;
 	background: #334037;
-	font-size:13px;
+	font-size: 13px;
 	height: 55px;
 	color: white;
 	position: absolute;
-    margin: 20px auto;
-    outline: none;
+	margin: 20px auto;
+	outline: none;
 	border-radius: 0;
-	outline:none;
+	outline: none;
 	border-bottom-right-radius: 15px;
 	border-top-right-radius: 15px;
-    transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
 }
+
 .subBanner button:focus,
 .subBanner button:active,
-.subBanner button:hover{
+.subBanner button:hover {
 	outline: transparent;
 	box-shadow: none;
 }
-.subBanner button:hover{
+
+.subBanner button:hover {
 	background: #102e19;
 }
 
@@ -154,67 +178,76 @@ ul li a:hover{
 
 
 
-@media screen and (max-width: 992px){
-	.hamburger{
+@media screen and (max-width: 992px) {
+	.hamburger {
 		position: relative;
 		margin-left: auto;
-		margin-right: 0px; 
+		margin-right: 0px;
 		cursor: pointer;
 		right: 5%;
 		/* top: 50%; */
-		float: right;	
+		float: right;
 		/* transform: translate(-5%, -50%); */
 	}
 
-	.line{
-		width:30px;
+	.line {
+		width: 30px;
 		height: 4px;
 		background: var(--default-color);
 		margin: 5px;
 		border-radius: 5px;
-		transition: all 0.5s linear;	
+		transition: all 0.5s linear;
 	}
-	ul{
+
+	ul {
 		margin-left: 0;
 		display: none;
 	}
-	ul li{
+
+	ul li {
 		opacity: 0;
 		display: none;
-		
+
 	}
-	nav.active{
+
+	nav.active {
 		height: 100%;
 	}
-	nav.active ul{
+
+	nav.active ul {
 		width: 100%;
 		/* padding-top: 50px; */
 	}
-	
-	nav.active ul{
-		display: block;
-	}
-	nav.active ul li{
+
+	nav.active ul {
 		display: block;
 	}
 
-	nav.active ul li:nth-child(1){
+	nav.active ul li {
+		display: block;
+	}
+
+	nav.active ul li:nth-child(1) {
 		transition: all .3s ease-in;
 	}
-	nav.active ul li:nth-child(2){
+
+	nav.active ul li:nth-child(2) {
 		transition: all .5s ease-in;
 	}
-	nav.active ul li:nth-child(3){
+
+	nav.active ul li:nth-child(3) {
 		transition: all .7s ease-in;
 	}
-	nav.active ul li:nth-child(4){
+
+	nav.active ul li:nth-child(4) {
 		transition: all .9s ease-in;
 	}
-	nav.active ul li:nth-child(5){
-		transition: all .11s ease-in;
-	} 
 
-	nav.active ul li.fade{
+	nav.active ul li:nth-child(5) {
+		transition: all .11s ease-in;
+	}
+
+	nav.active ul li.fade {
 		opacity: 1;
 		display: block;
 	}
@@ -225,10 +258,11 @@ ul li a:hover{
 	/* nav.active .hamburger{
 		transform: translate(-5%, 50%);
 	} */
-	nav.active .line:nth-child(1){
+	nav.active .line:nth-child(1) {
 		width: 17px;
 	}
-	nav.active .line:nth-child(2){
+
+	nav.active .line:nth-child(2) {
 		width: 25px;
 	}
 }
