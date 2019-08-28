@@ -14,7 +14,7 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 .navigation-bar {
@@ -89,6 +89,7 @@ ul li a:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
+	padding-top:10vh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -127,6 +128,7 @@ ul li a:hover {
 #eventDate {
 	transition: all 2s linear;
 }
+
 
 .subBanner input {
 	background: #edebee;
@@ -169,6 +171,77 @@ ul li a:hover {
 
 .subBanner button:hover {
 	background: #102e19;
+}
+.timeSymbolContainer{
+	display: flex;
+	vertical-align: middle;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	margin: 25px auto 10px;
+	max-width: 600px;
+}
+.timesymbol{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	width: 600px;
+}
+.timesymbol::before,.timesymbol::after{
+	content: '';
+	position: absolute;
+	height: 2px;
+	width:22%;
+	background: #334037;	
+}
+.timesymbol::before{
+	left: 26%;
+}
+.timesymbol::after{
+	right: 26%;
+}
+.timesymbol span{
+	font-size: 19px;
+	font-stretch: 20px;
+}
+#countdown
+{
+	margin-top:20px;
+	text-align: center;
+	color:white;  
+}
+#display .check{
+	display: inline-block;
+	margin:auto 12px;
+}
+.time{
+	background-color: #334037;
+	border-radius: 12px;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+}
+
+.timeLeft{
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em;
+	display: block;
+	margin-top: 15px;
+}
+
+#label{
+	color: #eee;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px #334037;
+}
+
+@media screen and (max-width:1500px){
+	.sec1{
+		padding-top:25vh;
+	}
 }
 
 

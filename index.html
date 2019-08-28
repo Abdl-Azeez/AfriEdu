@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="/style/font-awesome.min.css">
 	<link rel="stylesheet" href="/style/aos.css">
 	<link
-		href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Comfortaa|Cantora+One|Montserrat|Poppins&display=swap"
+		href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Comfortaa|Cantora+One|Montserrat|Poppins|Roboto&display=swap"
 		rel="stylesheet">
 	<script src="/script/jquery.js"></script>
 	<script src="/script/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body onload="setInterval('countdown()', 1500)">
 	<header>
 		<div class="navigation-bar" data-aos="fade-down">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -52,12 +52,43 @@
 			<div class="banner">
 				<b id="eventDate"></b><br>
 				<span data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">AfriRise Summit
-					19</span>
+					19 </span>
 			</div>
 			<div class="subBanner">
 				Subscibe to us to receive updates about the event<br>
 				<input type="text" placeholder="Enter your email">
 				<button class="btn">Send</button>
+			</div>
+			<div class="timeSymbolContainer">
+				<div class="timesymbol"><span>&#128340;</span></div>
+			</div>
+			<div id="countdown">
+				<div id="display">
+					<div class="check">
+						<div class="time">
+							<span id="fday" class="timeLeft"></span>
+						</div>
+						<p id="label">Days</p>
+					</div>
+					<div class="check">
+						<div class="time">
+							<span id="fhour" class="timeLeft"></span>
+						</div>
+						<p id="label">Hours</p>
+					</div>
+					<div class="check">
+						<div class="time">
+							<span id="fmin" class="timeLeft"></span>
+						</div>
+						<p id="label">Mins</p>
+					</div>
+					<div class="check">
+						<div class="time">
+							<span id="fsec" class="timeLeft"></span>
+						</div>
+						<p id="label">Secs</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
