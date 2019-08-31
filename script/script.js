@@ -1,3 +1,27 @@
+$(document).ready(function () {
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
+});
+
+function hideURLbar() {
+    window.scrollTo(0, 1);
+}
+
+addEventListener("load", function () {
+    setTimeout(hideURLbar, 0);
+}, false);
+
+
 const hamburger = document.querySelector('.menu');
 const navLink = document.querySelector('nav');
 const Links = document.querySelectorAll('ul li');
@@ -32,19 +56,19 @@ AOS.init();
 
 addEventListener("load", function () {
     $(window).scroll(function () {
-      if ($(window).scrollTop() >= 70) {
-        // $('.navigation-bar').addClass('nav-scroll');
-        $(".navigation-bar").fadeIn(500, function() {
-            $(this).addClass("nav-scroll");
-        });
-      } else {
-        // $('.navigation-bar').removeClass('nav-scroll');
-        $(".navigation-bar").fadeIn("slow", function() {
-            $(this).removeClass("nav-scroll");
-        });
-      }
+        if ($(window).scrollTop() >= 70) {
+            // $('.navigation-bar').addClass('nav-scroll');
+            $(".navigation-bar").fadeIn(500, function () {
+                $(this).addClass("nav-scroll");
+            });
+        } else {
+            // $('.navigation-bar').removeClass('nav-scroll');
+            $(".navigation-bar").fadeIn("slow", function () {
+                $(this).removeClass("nav-scroll");
+            });
+        }
     });
-  });
+});
 
 
 var targetDate = new Date(2019, 9, 30, 0, 0, 0); // target date
@@ -52,8 +76,8 @@ var targetDate = new Date(2019, 9, 30, 0, 0, 0); // target date
 function calcDays() {
     var currentDate = new Date();
     var day = (targetDate - currentDate) / (1000 * 60 * 60 * 24);
-    if (day<=0){
-        day=0;
+    if (day <= 0) {
+        day = 0;
     }
     return day;
 }
