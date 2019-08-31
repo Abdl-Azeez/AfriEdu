@@ -15,17 +15,31 @@
 
 body {
 	font-family: 'Roboto', sans-serif !important;
+	scroll-behavior: smooth;
 }
 
 .navigation-bar {
 	margin: 0 auto;
 	width: 100%;
-	position: absolute;
-	z-index: 99;
+	position: fixed;
+	z-index: 9999;
 	text-align: center;
 	padding: 1em 3em;
 }
-
+.nav-scroll{
+	height: auto;	
+	background: #334037;
+	color: white !important;
+	transition: 8s all ease-in;
+}
+.nav-scroll.navigation-bar{
+	padding: 0;
+}
+.nav-scroll nav{
+	border-bottom: none !important;
+	background-color: transparent !important;
+	padding: 0 20px;
+}
 nav {
 	position: relative;
 	height: auto;
@@ -36,7 +50,7 @@ nav {
 }
 
 
-ul {
+nav ul {
 	/* width: 50%; */
 	text-align: center;
 	height: 100%;
@@ -47,7 +61,7 @@ ul {
 	font-weight: 600;
 }
 
-ul li {
+nav ul li {
 	margin: 0 1em;
 	list-style: none;
 	height: inherit;
@@ -55,13 +69,14 @@ ul li {
 }
 
 
-ul li a {
+nav ul li a {
+	display: inline-block;
 	color: var(--default-color) !important;
 	text-decoration: none;
 	transition: all 0.25s ease-out;
 }
 
-ul li a:hover {
+nav ul li a:hover {
 	color: rgba(0, 0, 0, 0.6) !important;
 }
 
@@ -81,12 +96,32 @@ ul li a:hover {
 	display: inline-block;
 	margin: 0 0 -5px 5px;
 }
+.nav-scroll ul li a {
+	color: white !important;
+}
 
+.nav-scroll ul li a:hover {
+	color: rgba(146, 141, 141, 0.6) !important;
+}
+.nav-scroll .navbar-brand{
+	color: #eee !important;
+}
+.nav-scroll .navbar-brand span {
+	font-size: 35px;
+}
+
+.nav-scroll .navbar-brand i {
+	width: 8px;
+	background: #356243;
+	height: 8px;
+	margin: 0 0 -4px 3px;
+}
 .sec1 {
 	/* background: url('https://africacheck.org/wp-content/uploads/2013/09/000_ARP36353341.jpg'); */
 	background: url('/images/adventure.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
 	background-size: cover;
 	height: 100vh;
 	padding-top:10vh;
@@ -238,19 +273,37 @@ ul li a:hover {
 	text-shadow: 2px 2px 2px #334037;
 }
 
-@media screen and (max-width:1500px){
-	.sec1{
-		padding-top:25vh;
-	}
+.sec2{
+	height: 100vh;
+	padding: 60px 0px 30px 0px;
+    background: #4d7058f7;
+}
+.AboutTopic{
+	width: 100%;
+	height: 20%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AboutTopic span{
+	font-size: 46px;
+    font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	color:white;
 }
 
 
 
+@media screen and (max-width:1500px){
+	.sec1{
+		padding-top:30vh;
+	}
+}
 
 
 @media screen and (max-width: 992px) {
 	.hamburger {
-		position: relative;
+		position: absolute;
 		margin-left: auto;
 		margin-right: 0px;
 		cursor: pointer;
@@ -268,71 +321,100 @@ ul li a:hover {
 		border-radius: 5px;
 		transition: all 0.5s linear;
 	}
-
-	ul {
+	.nav-scroll .line{
+		background: #eee;
+	}
+	
+	nav ul {
 		margin-left: 0;
+		margin-right: 0;
 		display: none;
 	}
 
-	ul li {
+	nav ul li {
 		opacity: 0;
 		display: none;
 
 	}
-
-	nav.active {
+	
+	nav.Navtoggle {
 		height: 100%;
+		padding-bottom: 0px;
+		border-bottom: none !important;  
+	}
+	nav.Navtoggle .hamburger {
+		position: relative;
+		right:26px;
 	}
 
-	nav.active ul {
+	nav.Navtoggle ul {
+		display: block;
 		width: 100%;
-		/* padding-top: 50px; */
+		background: #334037e8;
+		transition: none;
+		height: auto;
+		margin-top:-5px;
 	}
 
-	nav.active ul {
+	nav.Navtoggle ul li {
 		display: block;
 	}
-
-	nav.active ul li {
-		display: block;
+	
+	nav.Navtoggle ul li a{
+		color: #eee !important;
+		display: inline-block !important;
 	}
-
-	nav.active ul li:nth-child(1) {
+	nav.Navtoggle ul li a:hover {
+		color: rgba(0, 0, 0, 0.6) !important;
+	}
+	nav.Navtoggle ul li:nth-child(1) {
 		transition: all .3s ease-in;
 	}
 
-	nav.active ul li:nth-child(2) {
+	nav.Navtoggle ul li:nth-child(2) {
 		transition: all .5s ease-in;
 	}
 
-	nav.active ul li:nth-child(3) {
+	nav.Navtoggle ul li:nth-child(3) {
 		transition: all .7s ease-in;
 	}
 
-	nav.active ul li:nth-child(4) {
+	nav.Navtoggle ul li:nth-child(4) {
 		transition: all .9s ease-in;
 	}
 
-	nav.active ul li:nth-child(5) {
+	nav.Navtoggle ul li:nth-child(5) {
 		transition: all .11s ease-in;
 	}
 
-	nav.active ul li.fade {
+	nav.Navtoggle ul li.fade {
 		opacity: 1;
 		display: block;
 	}
 
 
-
-
-	/* nav.active .hamburger{
-		transform: translate(-5%, 50%);
-	} */
-	nav.active .line:nth-child(1) {
+	nav.Navtoggle .line:nth-child(1) {
 		width: 17px;
 	}
 
-	nav.active .line:nth-child(2) {
+	nav.Navtoggle .line:nth-child(2) {
 		width: 25px;
+	}
+}
+@media screen and (max-width: 768px) {
+  nav.Navtoggle .hamburger {
+    right: 17px;
+  }
+}
+@media screen and (max-width: 600px) {
+	
+	nav.Navtoggle .hamburger {
+	  right: 8px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	nav.Navtoggle .hamburger {
+	  right: -30px;
 	}
 }
