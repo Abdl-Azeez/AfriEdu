@@ -1,14 +1,13 @@
 $(document).ready(function () {
     $("a").on('click', function (event) {
+
         if (this.hash !== "") {
             event.preventDefault();
 
-            var hash = this.hash;
+            const elem = this; // save it so we can use it in the animate
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 1000, function () {
-                window.location.hash = hash;
-            });
+                scrollTop: $($(elem).attr('href')).offset().top
+            }, 1000);
         }
     });
 });
