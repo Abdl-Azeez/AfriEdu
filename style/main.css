@@ -26,20 +26,24 @@ body {
 	text-align: center;
 	padding: 1em 3em;
 }
-.nav-scroll{
-	height: auto;	
+
+.nav-scroll {
+	height: auto;
 	background: #334037;
 	color: white !important;
 	transition: 8s all ease-in;
 }
-.nav-scroll.navigation-bar{
+
+.nav-scroll.navigation-bar {
 	padding: 0;
 }
-.nav-scroll nav{
+
+.nav-scroll nav {
 	border-bottom: none !important;
 	background-color: transparent !important;
 	padding: 0 20px;
 }
+
 nav {
 	position: relative;
 	height: auto;
@@ -96,6 +100,7 @@ nav ul li a:hover {
 	display: inline-block;
 	margin: 0 0 -5px 5px;
 }
+
 .nav-scroll ul li a {
 	color: white !important;
 }
@@ -103,9 +108,11 @@ nav ul li a:hover {
 .nav-scroll ul li a:hover {
 	color: rgba(146, 141, 141, 0.6) !important;
 }
-.nav-scroll .navbar-brand{
+
+.nav-scroll .navbar-brand {
 	color: #eee !important;
 }
+
 .nav-scroll .navbar-brand span {
 	font-size: 35px;
 }
@@ -116,6 +123,7 @@ nav ul li a:hover {
 	height: 8px;
 	margin: 0 0 -4px 3px;
 }
+
 .sec1 {
 	/* background: url('https://africacheck.org/wp-content/uploads/2013/09/000_ARP36353341.jpg'); */
 	background: url('/images/adventure.jpg');
@@ -124,7 +132,7 @@ nav ul li a:hover {
 	/* background-attachment: fixed; */
 	background-size: cover;
 	height: 100vh;
-	padding-top:10vh;
+	padding-top: 10vh;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -207,7 +215,8 @@ nav ul li a:hover {
 .subBanner button:hover {
 	background: #102e19;
 }
-.timeSymbolContainer{
+
+.timeSymbolContainer {
 	display: flex;
 	vertical-align: middle;
 	align-items: center;
@@ -217,41 +226,49 @@ nav ul li a:hover {
 	margin: 25px auto 10px;
 	max-width: 600px;
 }
-.timesymbol{
+
+.timesymbol {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	flex-flow: column;
 	width: 600px;
 }
-.timesymbol::before,.timesymbol::after{
+
+.timesymbol::before,
+.timesymbol::after {
 	content: '';
 	position: absolute;
 	height: 2px;
-	width:22%;
-	background: #334037;	
+	width: 22%;
+	background: #334037;
 }
-.timesymbol::before{
+
+.timesymbol::before {
 	left: 26%;
 }
-.timesymbol::after{
+
+.timesymbol::after {
 	right: 26%;
 }
-.timesymbol span{
+
+.timesymbol span {
 	font-size: 19px;
 	font-stretch: 20px;
 }
-#countdown
-{
-	margin-top:20px;
+
+#countdown {
+	margin-top: 20px;
 	text-align: center;
-	color:white;  
+	color: white;
 }
-#display .check{
+
+#display .check {
 	display: inline-block;
-	margin:auto 12px;
+	margin: auto 12px;
 }
-.time{
+
+.time {
 	background-color: #334037;
 	border-radius: 12px;
 	height: 100px;
@@ -259,7 +276,7 @@ nav ul li a:hover {
 	display: inline-block;
 }
 
-.timeLeft{
+.timeLeft {
 	text-align: center;
 	font-weight: bold;
 	font-size: 3em;
@@ -267,36 +284,255 @@ nav ul li a:hover {
 	margin-top: 15px;
 }
 
-#label{
+#label {
 	color: #eee;
 	font-size: 30px;
 	text-shadow: 2px 2px 2px #334037;
 }
 
-.sec2{
-	height: 100vh;
+.sec2 {
+	height: auto;
 	padding: 60px 0px 30px 0px;
-    background: #4d7058f7;
+	background: #4d7058f7;
 }
-.AboutTopic{
+
+.AboutTopic {
 	width: 100%;
 	height: 20%;
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 }
-.AboutTopic span{
+
+.AboutTopic span {
 	font-size: 46px;
-    font-weight: 700;
+	font-weight: 700;
 	font-family: 'Poppins', sans-serif;
-	color:white;
+	color: white;
+}
+
+.sec2 .container {
+	background: white;
+	max-width: 1240px;
+}
+
+label.AboutSub {
+	font-family: 'Poppins', sans-serif;
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 700;
+	font-style: normal;
+	display: flex;
+	justify-content: center;
+	color: #4d7058f7;
+	padding-top: 70px;
+}
+
+.sec2 .AboutContent {
+	display: flex;
+	align-items: flex-start;
+	justify-content: normal;
+	flex-direction: column;
+	padding: 40px 20px 20px;
+}
+
+.AboutContent p,
+.AboutContent2 p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 22px;
+	text-transform: capitalize;
+	line-height: 30px;
+	font-weight: 600;
+	font-style: normal;
+	display: flex;
+	position: relative;
+	left: -55px;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+}
+
+.AboutContent p::before,
+.AboutContent2 p::before {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 35px;
+	background: #4d7058f7;
+	left: -38px;
+}
+
+.AboutContent ol, .AboutContent2 ol {
+	counter-reset: my-counter;
+	list-style: none;
+	padding-left: 80px;
+	text-align: justify;
+}
+
+.AboutContent ol strong, .AboutContent2 ol strong  {
+	font-weight: 600;
+	text-shadow: 0px 0px 1px #52745d;
+}
+
+.AboutContent ol li, .AboutContent2 ol li  {
+	margin: 0 0 0.5rem 0;
+	counter-increment: my-counter;
+	position: relative;
+	padding-left: 20px;
+}
+
+.AboutContent ol li::before, .AboutContent2 ol li::before {
+	content: counter(my-counter);
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	position: absolute;
+	--size: 30px;
+	left: calc(-1 * var(--size) - 10px);
+	line-height: var(--size);
+	width: var(--size);
+	height: var(--size);
+	top: 0;
+	/* transform: rotate(-10deg); */
+	background: #4d7058f7;
+	border-radius: 25%;
+	text-align: center;
+	box-shadow: 1px 1px 0 #999;
+}
+
+.AboutContent li ul, .AboutContent2 li ul  {
+	margin: 12px 0px 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: column;
+}
+
+.AboutContent li ul dl, .AboutContent2 li ul dl  {
+	margin: 2px !important;
+	display: inline-flex;
+	align-items: center;
+
+}
+
+.AboutContent li ul dl::before, .AboutContent2 li ul dl::before {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 8px;
+	background: black;
+	margin-left: -20px;
+}
+
+.AboutContent2 {
+	display: flex;
+	flex-flow: column;
+	vertical-align: middle;
+	align-items: center;
+	padding: 40px 20px 20px 40px !important;
+}
+
+.AboutContent2 p {
+	left: -100px;
+}
+
+.accordions {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.accordion {
+	width: 100%;
+	color: white;
+	overflow: hidden;
+}
+
+.accordion-label {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	background: #52745d;
+	font-weight: bold;
+	cursor: pointer;
+	/* Icon */
+}
+
+.accordion-label:hover {
+	background: #334037;
+}
+
+.accordion-label::after {
+	content: "❯";
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	transition: all 0.35s;
+}
+
+.accordion-content {
+	max-height: 0;
+	padding: 0 1em;
+	color: #000;
+	background: white;
+	transition: all 0.35s;
+}
+
+.accordion-close {
+	display: flex;
+	justify-content: flex-end;
+	padding: 1em;
+	font-size: 0.75em;
+	background: #334037;
+	cursor: pointer;
+}
+
+.accordion-close:hover {
+	background: #334037;
+}
+
+.accordionInput {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+input:checked+.accordion-label {
+	background: #334037;
+}
+
+input:checked+.accordion-label::after {
+	transform: rotate(90deg);
+}
+
+input:checked~.accordion-content {
+	max-height: 100vh;
+	padding: 1em;
+	overflow: scroll;
+}
+
+.accordion ol{
+	margin-bottom: 0px !important;
+}
+
+.accordion ol li{
+	margin: 0 !important;
+}
+input:checked~.accordion-content ol li{
+	margin: 0 0 0.5rem 0 !important;
 }
 
 
 
-@media screen and (max-width:1500px){
-	.sec1{
-		padding-top:30vh;
+
+
+
+
+
+
+@media screen and (max-width:1500px) {
+	.sec1 {
+		padding-top: 30vh;
 	}
 }
 
@@ -321,10 +557,11 @@ nav ul li a:hover {
 		border-radius: 5px;
 		transition: all 0.5s linear;
 	}
-	.nav-scroll .line{
+
+	.nav-scroll .line {
 		background: #eee;
 	}
-	
+
 	nav ul {
 		margin-left: 0;
 		margin-right: 0;
@@ -336,15 +573,16 @@ nav ul li a:hover {
 		display: none;
 
 	}
-	
+
 	nav.Navtoggle {
 		height: 100%;
 		padding-bottom: 0px;
-		border-bottom: none !important;  
+		border-bottom: none !important;
 	}
+
 	nav.Navtoggle .hamburger {
 		position: relative;
-		right:26px;
+		right: 26px;
 	}
 
 	nav.Navtoggle ul {
@@ -353,20 +591,22 @@ nav ul li a:hover {
 		background: #334037e8;
 		transition: none;
 		height: auto;
-		margin-top:-5px;
+		margin-top: -5px;
 	}
 
 	nav.Navtoggle ul li {
 		display: block;
 	}
-	
-	nav.Navtoggle ul li a{
+
+	nav.Navtoggle ul li a {
 		color: #eee !important;
 		display: inline-block !important;
 	}
+
 	nav.Navtoggle ul li a:hover {
 		color: rgba(0, 0, 0, 0.6) !important;
 	}
+
 	nav.Navtoggle ul li:nth-child(1) {
 		transition: all .3s ease-in;
 	}
@@ -401,20 +641,22 @@ nav ul li a:hover {
 		width: 25px;
 	}
 }
+
 @media screen and (max-width: 768px) {
-  nav.Navtoggle .hamburger {
-    right: 17px;
-  }
-}
-@media screen and (max-width: 600px) {
-	
 	nav.Navtoggle .hamburger {
-	  right: 8px;
+		right: 17px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	nav.Navtoggle .hamburger {
+		right: 8px;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	nav.Navtoggle .hamburger {
-	  right: -30px;
+		right: -30px;
 	}
 }
