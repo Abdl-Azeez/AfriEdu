@@ -544,10 +544,12 @@ input:checked~.accordion-content ol li {
 }
 
 .sec3 {
-	height: 100vh;
-	padding: 30px 0px 30px 0px;
+	height: auto;
+	padding: 50px 0px 50px 0px;
 }
-
+.sec3 .container-fluid{
+	padding-top: 30px;
+}
 .eventSpeakers span {
 	color: #000;
 }
@@ -566,8 +568,13 @@ input:checked~.accordion-content ol li {
 
 .speaker {
 	padding: 0px 5px !important;
+	/* background: #52745d; */
+	max-height: 315px;
+	overflow: hidden;
 }
-
+.speaker:hover{
+	background: #52745d;
+}
 .speaker img {
 	width: 100%;
 	height: 100%;
@@ -575,10 +582,53 @@ input:checked~.accordion-content ol li {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+	opacity: 1;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+.speaker:hover img {
+	opacity: 0.4;
+}
+.speaker h3,
+.speaker p {
+	margin: 0;
+}
+.speaker h3 {
+	position: absolute;
+	bottom: 10px;
+	opacity: 1;
+	/* padding-top: 30%; */
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	word-spacing: -0.15em;
+	font-weight: 700;
+	width: 100%;
+	font-size: 20px;
+}
+.speaker:hover h3{
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+	width: 80%;
 }
 
-
+.speaker p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+	letter-spacing: 1px;
+	font-size: 12px;
+	font-style: italic;
+}
+.speaker:hover p{
+	opacity: 1;
+	-webkit-transform: translate3d(0,-45px,0);
+	transform: translate3d(0,-45px,0);
+}
 .speaker figcaption {
 	padding: 2em;
 	color: #fff;
@@ -586,64 +636,19 @@ input:checked~.accordion-content ol li {
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-}
-
-.speaker figcaption::before,
-.speaker figcaption::after {
-	pointer-events: none;
-}
-
-.speaker figcaption,
-.speaker figcaption > a {
 	position: absolute;
-	top: 0;
-	left: 0;
+	display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
 	width: 100%;
-	height: 100%;
+	text-align: center;
+    height: 100%;
+    justify-content: center;
 }
-
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.speaker figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
 
-.speaker h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
-}
-
-.speaker h2 span {
-	font-weight: 800;
-}
-
-.speaker h2,
-.speaker p {
-	margin: 0;
-}
-
-.speaker p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
-}
-
-.speaker {
-	background: #52745d;
-}
-
-.speaker img {
-	opacity: 0.7;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-}
-
-.speaker:hover img {
-	opacity: 0.4;
-}
 
 .speaker figcaption::before,
 .speaker figcaption::after {
@@ -653,6 +658,7 @@ input:checked~.accordion-content ol li {
 	bottom: 30px;
 	left: 30px;
 	content: '';
+	pointer-events: none;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
@@ -672,26 +678,6 @@ input:checked~.accordion-content ol li {
 	transform: scale(1,0);
 }
 
-.speaker h2 {
-	position: absolute;
-	bottom: 10px;
-	opacity: 1;
-	/* padding-top: 30%; */
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,-20px,0);
-	transform: translate3d(0,-20px,0);
-}
-
-.speaker p {
-	padding: 20px 2.5em;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
-}
-
 .speaker:hover figcaption::before,
 .speaker:hover figcaption::after {
 	opacity: 1;
@@ -699,13 +685,22 @@ input:checked~.accordion-content ol li {
 	transform: scale(1);
 }
 
-.speaker:hover h2,
-.speaker:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
 
+
+.speakerJob{
+	background: #52745dc4;
+    color: white;
+	position: absolute;
+    /* bottom: 0; */
+    /* width: 100%; */
+    /* align-self: center; */
+    /* left: 0; */
+    padding: 5px 10px;
+}
+.speakerJob h5{
+	font-size: 15px;
+	margin: 0;
+}
 
 
 
