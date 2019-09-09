@@ -358,6 +358,7 @@ nav ul li a:hover {
 .counter-inner .row{
 	align-items: center;
 	flex-flow: row;
+	display: flex;
 	justify-content: center;
 }
 .counter-stat h2{
