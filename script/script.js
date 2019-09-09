@@ -35,7 +35,7 @@ hamburger.addEventListener('click', () => {
 });
 
 let i = 0;
-const text = "October 25, 2019";
+const text = "November 2, 2019";
 const speed = 150;
 
 function type() {
@@ -70,7 +70,7 @@ addEventListener("load", function () {
 });
 
 
-var targetDate = new Date(2019, 9, 25, 0, 0, 0); // target date
+var targetDate = new Date(2019, 10, 2, 0, 0, 0); // target date
 
 function calcDays() {
     var currentDate = new Date();
@@ -109,3 +109,6 @@ function countdown() {
     document.getElementById("fmin").innerHTML = Math.floor(min);
     document.getElementById("fsec").innerHTML = Math.floor(sec);
 }
+
+document.querySelector('video').defaultPlaybackRate = 0.5;
+document.querySelector('video').play();

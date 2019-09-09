@@ -21,7 +21,7 @@
 	<header>
 		<div class="navigation-bar" data-aos="fade-down">
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="index.html"><span>A</span>frica<span>R</span>ise<i></i></a>
+				<a class="navbar-brand" href="index.html"><span>A</span>frise<span>19</span><i></i></a>
 				<div class="hamburger menu">
 					<div class="line"></div>
 					<div class="line"></div>
@@ -49,9 +49,13 @@
 	</header>
 	<main>
 		<section class="sec1" id="section1">
+			<div class="overlay"></div>
+			<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+				<source src="images/Afriducatio1.mp4" type="video/mp4">
+			</video>
 			<div class="banner">
 				<strong id="eventDate"></strong><br>
-				<span data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Africa Rise Conference
+				<span data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Africa Rise Summit
 					2019</span>
 			</div>
 			<div class="subBanner">
@@ -62,7 +66,7 @@
 			<div class="timeSymbolContainer">
 				<div class="timesymbol"><span>&#128340;</span></div>
 			</div>
-			<div id="countdown">
+			<!-- <div id="countdown">
 				<div id="display">
 					<div class="check">
 						<div class="time">
@@ -89,13 +93,52 @@
 						<p id="label">Secs</p>
 					</div>
 				</div>
+			</div> -->
+			<div class="counter-wrap">
+				<div class="">
+					<div class="counter-inner">
+						<div class="row">
+							<div class="col-lg-5 col-12">
+								<div class="counter-stat pl-lg-5">
+									<h2><span class="font-weight-bold">Get involved</span>
+										<br>NOW!</h2>
+								</div>
+							</div>
+
+							<div class="syotimer">
+								<div class="syotimer__head"></div>
+								<div class="syotimer__body">
+									<div class="syotimer-cell syotimer-cell_type_day">
+										<div class="syotimer-cell__value" id="fday" style="opacity: 1;"></div>
+										<div class="syotimer-cell__unit">days</div>
+									</div>
+									<div class="syotimer-cell syotimer-cell_type_hour">
+										<div class="syotimer-cell__value" id="fhour" style="opacity: 1;"></div>
+										<div class="syotimer-cell__unit">hour</div>
+									</div>
+									<div class="syotimer-cell syotimer-cell_type_minute">
+										<div class="syotimer-cell__value" id="fmin" style="opacity: 1;"></div>
+										<div class="syotimer-cell__unit">minutes</div>
+									</div>
+									<div class="syotimer-cell syotimer-cell_type_second">
+										<div class="syotimer-cell__value" id="fsec" style="opacity: 1;"></div>
+										<div class="syotimer-cell__unit">seconds</div>
+									</div>
+								</div>
+								<div class="syotimer__footer"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
+
 		<section class="sec2" id="section2">
-			<div class="AboutTopic">
-				<span>About This Event</span>
-			</div>
+			
 			<div class="container">
+					<div class="AboutTopic">
+							<span>About This Event</span>
+						</div>
 				<label class="AboutSub">What is about Africa Rise Conference 2019?</label>
 				<div class="row">
 					<div class="col-lg-6 AboutContent">
@@ -240,7 +283,7 @@
 			<div class="eventSpeakers">
 				<span>Event Speakers</span>
 			</div>
-			<div class="container-fluid">
+			<div class="container">
 				<div class="speakers col-md-12">
 					<div class="row">
 						<figure class="col-md-3 speaker">
