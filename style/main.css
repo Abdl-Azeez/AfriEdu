@@ -381,7 +381,7 @@ nav ul li a:hover {
     display: inline-block;
     height: 100px;
     width: 115px;
-	border-radius: 3px; 
+	border-radius: 15px; 
     font-family: "Poppins", sans-serif;
 	background: var(--bg-color);
 	color: var(--plain-color);
@@ -402,12 +402,9 @@ nav ul li a:hover {
 }
 .sec2 {
 	height: auto;
-	padding: 80px 0px 30px 0px;
-	background: url('https://us.123rf.com/450wm/irinelle/irinelle1801/irinelle180100007/93000531-african-tribal-pattern-vector-seamless-ethnic-africa-fabric-print-with-abstract-geometric-elements-b.jpg?ver=6');
-	
-	/* background: var(--bg-color); */
+	padding: 40px 0px 30px 0px;
+	background: var(--plain-color); 
 }
-
 .AboutTopic,
 .eventSpeakers {
 	width: 100%;
@@ -416,21 +413,29 @@ nav ul li a:hover {
 	justify-content: center;
 	align-items: center;
 }
+.AboutTopic{
+	padding-bottom: 40px; 
+}
 
 .AboutTopic span,
 .eventSpeakers span {
 	font-size: 46px;
 	font-weight: 700;
 	font-family: 'Poppins', sans-serif;
-	color: var(--bg-color);
+	color: var(--default-color);
 }
 
 .sec2 .container {
 	background: var(--plain-color);
 	max-width: 1240px;
-	padding-top: 40px; 
+	align-items: center;
+    display: flex;
+    flex-flow: column;
 }
-
+.Abt{
+	max-width: 80%;
+	text-align: justify;
+}
 label.AboutSub {
 	font-family: 'Poppins', sans-serif;
 	font-size: 28px;
@@ -440,7 +445,10 @@ label.AboutSub {
 	display: flex;
 	justify-content: center;
 	color: var(--bg-color);
-	padding-top: 70px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid;
+	margin: 0 50px 20px;
 }
 
 .sec2 .AboutContent {
