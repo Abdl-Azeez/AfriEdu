@@ -447,8 +447,14 @@ label.AboutSub {
 	color: var(--bg-color);
 	padding-top: 30px;
 	padding-bottom: 20px;
-	border-bottom: 2px solid;
-	margin: 0 50px 20px;
+	/* border-bottom: 2px solid; */
+	margin: 0 50px 0px;
+}
+.Abt>div{
+	border-top: 2px solid var(--bg-color); 
+	border-bottom: 2px solid var(--bg-color); 
+	padding:25px; 
+	text-align:justify;
 }
 
 .sec2 .AboutContent {
