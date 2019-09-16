@@ -112,3 +112,100 @@ function countdown() {
 
 document.querySelector('video').defaultPlaybackRate = 0.5;
 document.querySelector('video').play();
+
+
+
+$('#accordion0').click(function () {
+    $(this).addClass("opened");
+    $('#accordion1').removeClass("opened");
+    $('#accordion2').removeClass("opened");
+    $('#accordion3').removeClass("opened");
+
+    $('#tab0').addClass("active");
+    $('#tab1').removeClass("active");
+    $('#tab2').removeClass("active");
+    $('#tab3').removeClass("active");
+});
+
+$('#accordion1').click(function () {
+    $(this).addClass("opened");
+    $('#accordion0').removeClass("opened");
+    $('#accordion2').removeClass("opened");
+    $('#accordion3').removeClass("opened");
+
+    $('#tab1').addClass("active");
+    $('#tab0').removeClass("active");
+    $('#tab2').removeClass("active");
+    $('#tab3').removeClass("active");
+});
+$('#accordion2').click(function () {
+    $(this).addClass("opened");
+    $('#accordion0').removeClass("opened");
+    $('#accordion1').removeClass("opened");
+    $('#accordion3').removeClass("opened");
+
+    $('#tab2').addClass("active");
+    $('#tab0').removeClass("active");
+    $('#tab1').removeClass("active");
+    $('#tab3').removeClass("active");
+});
+$('#accordion3').click(function () {
+    $(this).addClass("opened");
+    $('#accordion0').removeClass("opened");
+    $('#accordion1').removeClass("opened");
+    $('#accordion2').removeClass("opened");
+
+    $('#tab3').addClass("active");
+    $('#tab1').removeClass("active");
+    $('#tab2').removeClass("active");
+    $('#tab0').removeClass("active");
+});
+
+
+
+
+$('#panellist0').click(function () {
+    $(this).addClass("active");
+    $('#panellist1').removeClass("active");
+    $('#panellist2').removeClass("active");
+    $('#panellist3').removeClass("active");
+
+    $('#Panel0').addClass("active");
+    $('#Panel1').removeClass("active");
+    $('#Panel2').removeClass("active");
+    $('#Panel3').removeClass("active");
+});
+
+$('#panellist1').click(function () {
+    $(this).addClass("active");
+    $('#panellist0').removeClass("active");
+    $('#panellist2').removeClass("active");
+    $('#panellist3').removeClass("active");
+
+    $('#Panel1').addClass("active");
+    $('#Panel0').removeClass("active");
+    $('#Panel2').removeClass("active");
+    $('#Panel3').removeClass("active");
+});
+$('#panellist2').click(function () {
+    $(this).addClass("active");
+    $('#panellist0').removeClass("active");
+    $('#panellist1').removeClass("active");
+    $('#panellist3').removeClass("active");
+
+    $('#Panel2').addClass("active");
+    $('#Panel1').removeClass("active");
+    $('#Panel0').removeClass("active");
+    $('#Panel3').removeClass("active");
+});
+$('#panellist3').click(function () {
+    $(this).addClass("active");
+    $('#panellist0').removeClass("active");
+    $('#panellist1').removeClass("active");
+    $('#panellist2').removeClass("active");
+
+    $('#Panel3').addClass("active");
+    $('#Panel2').removeClass("active");
+    $('#Panel1').removeClass("active");
+    $('#Panel0').removeClass("active");
+});
