@@ -1,13 +1,24 @@
 $(document).ready(function () {
     $("a").on('click', function (event) {
 
-        if (this.hash !== "") {
+        if ((this.hash !== "") && (this.hash !== "#carouselCont")) {
             event.preventDefault();
 
-            const elem = this; // save it so we can use it in the animate
+            const elem = this;
             $('html, body').animate({
                 scrollTop: $($(elem).attr('href')).offset().top
             }, 1000);
+        }
+    });
+});
+
+$(document).ready(function () {
+    $("a").on('click', function (event) {
+
+        if (this.hash === "#carouselCont") {
+            event.preventDefault();
+
+
         }
     });
 });

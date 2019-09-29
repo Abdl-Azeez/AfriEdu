@@ -490,7 +490,7 @@ label.AboutSub {
 	width: 90%;
 	justify-content: center;
 	padding: 40px 20px 40px 40px !important;
-	margin-top:40px;
+	margin-top: 40px;
 }
 
 .accordion {
@@ -501,13 +501,13 @@ label.AboutSub {
 	transition: background 0.2s ease, border 0.2s ease;
 	border-style: solid;
 	border-width: 1px 0 1px 1px;
-	border-color: #e9e9e9;
+	border-color: #bb8e31;
 	text-align: center;
 }
 
 .accordion:last-child {
 	border-right-width: 1px;
-	border-right-color: #e9e9e9;
+	border-right-color: #bb8e31;
 }
 
 .accordion.opened {
@@ -560,7 +560,7 @@ label.AboutSub {
 	padding: 0;
 	border-style: solid;
 	border-width: 0 1px 1px;
-	border-color: transparent #e9e9e9 #e9e9e9;
+	border-color: transparent #bb8e31 #bb8e31;
 }
 
 .fade.in {
@@ -763,6 +763,13 @@ label.AboutSub {
 	padding: 50px 0px 50px 0px;
 	display: flex;
 	flex-direction: column;
+	background: #ffdd96 url('/images/team2.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: difference;
+	overflow: hidden;
+
 }
 
 .sec3 .container {
@@ -873,10 +880,6 @@ label.AboutSub {
 	justify-content: center;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-
-
 .speaker figcaption::before,
 .speaker figcaption::after {
 	position: absolute;
@@ -930,12 +933,29 @@ label.AboutSub {
 	margin: 0;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+	top: 50% !important;
+	height: 20px;
+	filter: invert(100);
+	display: block !important;
+}
 
+.carousel-control-next a:focus,
+.carousel-control-prev a:focus {
+	opacity: .5 !important;
+	display: none !important;
+}
 
+.carousel-control-next:hover a,
+.carousel-control-prev:hover a {
+	opacity: .5;
+}
 
-
-
-
+.carousel-control-next a:hover,
+.carousel-control-prev a:hover {
+	opacity: .9 !important;
+}
 
 
 
