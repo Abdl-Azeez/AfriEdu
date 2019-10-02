@@ -17,11 +17,10 @@ $(document).ready(function () {
 
         if (this.hash === "#carouselCont") {
             event.preventDefault();
-
-
         }
     });
 });
+
 
 function hideURLbar() {
     window.scrollTo(0, 1);

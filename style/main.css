@@ -82,7 +82,13 @@ nav ul li a {
 	text-decoration: none;
 	transition: all 0.5s ease-out;
 }
-
+nav ul li .button{
+	padding: 10px 25px;
+	background: var(--bg-color);
+	width: 150px;
+	margin:0;
+	border-radius: 7px;
+}
 nav ul li a:hover {
 	color: var(--default-color) !important;
 }
@@ -114,7 +120,10 @@ nav ul li a:hover {
 .nav-scroll ul li a {
 	color: var(--default-color) !important;
 }
-
+.nav-scroll ul li .button{
+	background: var(--default-color);
+	color: var(--plain-color) !important;
+}
 .nav-scroll ul li a:hover {
 	color: var(--plain-color) !important;
 }
@@ -138,7 +147,7 @@ nav ul li a:hover {
 	background: url('/images/09.jpg') no-repeat center 10% fixed;
 	background-size: cover;
 	height: 100vh;
-	overflow-y: hidden;
+	overflow: hidden;
 	padding-top: 10vh;
 	position: relative;
 	display: flex;
@@ -773,6 +782,11 @@ label.AboutSub {
 	width: 100%;
 }
 
+ol.indicators {
+	display: none !important;
+	position: relative !important;
+}
+
 .eventSpeakers span {
 	color: var(--default-color);
 }
@@ -1376,7 +1390,7 @@ label.AboutSub {
 		cursor: pointer;
 		right: 5%;
 		top: 30%;
-		bottom:0;
+		bottom: 0;
 		float: right;
 		/* transform: translate(-5%, -50%); */
 	}
@@ -1421,7 +1435,7 @@ label.AboutSub {
 	nav.Navtoggle ul {
 		display: block;
 		width: 100%;
-		background: var(--hover-color);
+		background: var(--bg-color);
 		transition: none;
 		height: auto;
 		margin-top: 15px;
@@ -1435,7 +1449,11 @@ label.AboutSub {
 		color: var(--default-color) !important;
 		display: inline-block !important;
 	}
-
+	nav.Navtoggle ul li .button {
+		background: var(--default-color);
+		color: var(--plain-color) !important;
+		margin: 12px auto;
+	}
 	nav.Navtoggle ul li a:hover {
 		color: rgba(0, 0, 0, 0.6) !important;
 	}
@@ -1670,12 +1688,83 @@ label.AboutSub {
 	}
 
 	.syotimer-cell__value {
-		font-weight: 700;
-		font-size: 28px;
+		font-weight: 600;
+		font-size: 26px;
 		line-height: 28px;
 	}
 
 	.syotimer-cell__unit {
 		font-size: 14px;
+	}
+
+	.AboutTopic span,
+	.eventSpeakers span,
+	.Tickets span {
+		font-size: 28px;
+	}
+
+	.Abt {
+		max-width: 100%;
+	}
+
+	label.AboutSub {
+		padding-top: 0;
+		font-size: 20px;
+	}
+
+	.Abt>div {
+		padding: 10px;
+	}
+
+	.objective-text {
+		padding-left: 32px;
+	}
+
+	.objective h3 {
+		font-size: 20px;
+		text-align: left;
+	}
+
+	.accordions {
+		width: 100%;
+		padding: 2px !important;
+	}
+
+
+	.accordion {
+		border-width: 1px !important;
+	}
+
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 7% !important;
+	}
+
+	.pricing .container .column .box .title .fa {
+		font-size: 40px;
+	}
+
+	.pricing .container .column .box {
+		max-width: 250px;
+		min-height: 400px;
+	}
+
+	.pricing .container .column .box .price h4 {
+		font-size: 50px;
+	}
+
+	.pricing .container .column .box .price sup {
+		font-size: 18px;
+		top: -1.4em;
+	}
+
+	.pricing .container .column .box .option ul li .fa {
+		left: 15px;
+	}
+
+	.pricing .container .column .box .btn {
+		margin-top: -5px;
+		padding: 6px 15px;
 	}
 }
