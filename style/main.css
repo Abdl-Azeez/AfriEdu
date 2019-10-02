@@ -299,7 +299,8 @@ nav ul li a:hover {
 
 .counter-wrap {
 	position: relative;
-	margin-left: auto;
+	/* margin-left: auto; */
+	align-self: flex-end;
 	z-index: 2;
 }
 
@@ -381,7 +382,8 @@ nav ul li a:hover {
 }
 
 .AboutTopic,
-.eventSpeakers {
+.eventSpeakers,
+.Tickets {
 	width: 100%;
 	height: 20%;
 	display: flex;
@@ -394,7 +396,8 @@ nav ul li a:hover {
 }
 
 .AboutTopic span,
-.eventSpeakers span {
+.eventSpeakers span,
+.Tickets span {
 	font-size: 46px;
 	font-weight: 700;
 	font-family: 'Poppins', sans-serif;
@@ -478,7 +481,7 @@ label.AboutSub {
 	margin: 0 auto 50px;
 	max-width: 960px;
 	text-align: left;
-	background-color: #fff;
+	background-color: var(--plain-color);
 }
 
 
@@ -748,16 +751,6 @@ label.AboutSub {
 	margin-left: -20px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .sec3 {
 	height: auto;
 	padding: 50px 0px 50px 0px;
@@ -767,12 +760,13 @@ label.AboutSub {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-blend-mode: difference;
 	overflow: hidden;
 
 }
 
-.sec3 .container {
+.sec3 .carousel-item .container {
 	padding-top: 30px;
 	margin-top: 40px;
 	align-self: center;
@@ -789,12 +783,15 @@ label.AboutSub {
 
 .speakers .row {
 	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
 }
 
 .speaker {
 	padding: 0px 5px !important;
 	/* background: #52745d; */
 	max-height: 315px;
+	max-width: 330px;
 	overflow: hidden;
 }
 
@@ -915,8 +912,6 @@ label.AboutSub {
 	transform: scale(1);
 }
 
-
-
 .speakerJob {
 	background: var(--bg-color);
 	color: var(--plain-color);
@@ -957,19 +952,129 @@ label.AboutSub {
 	opacity: .9 !important;
 }
 
+.Tickets {
+	padding: 55px 0;
+}
 
+.pricing {
+	/* padding: 100px 0; */
+	box-sizing: border-box;
+}
 
+.pricing .container {
+	margin: 0 auto;
+}
 
+.pricing .container .row {
+	margin: 0 auto;
+	align-items: center;
+}
 
+.pricing .container .column {
+	position: relative;
+	width: 90%;
+	float: left;
+	transition: 0.5s;
+}
 
+.pricing .container .column .box {
+	position: relative;
+	max-width: 300px;
+	min-height: 450px;
+	margin: 0 auto;
+	padding: 20px;
+	padding-top: 0;
+	box-sizing: border-box;
+	text-align: center;
+	background: linear-gradient(0deg, #202022, #464646);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 150px;
+	border-bottom-right-radius: 150px;
+	border: 3px solid var(--bg-color);
+	box-shadow: 0 0 0 6px #323232, 0 0 0 10px var(--bg-color), 0 0 0 20px #323232
+		/*, 0 10px 150px rgba(0, 0, 0, 1)*/
+	;
+	overflow-y: hidden;
+	transition: .5s ease;
+}
 
+.pricing .container .column .box:hover {
+	transform: scale(1.02)
+}
 
+.pricing .container .column .box:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, .1);
+	pointer-events: none;
+}
 
+.pricing .container .column .box .title .fa {
+	margin-top: 15px;
+	font-size: 60px;
+	color: var(--bg-color);
+}
 
+.pricing .container .column .box .title h2 {
+	color: var(--plain-color);
+	margin: 18px 0 0;
+	padding: 0;
+}
 
+.pricing .container .column .box .price h4 {
+	font-size: 60px;
+	color: var(--bg-color);
+	margin: 10px 0;
+	padding: 0;
+}
 
+.pricing .container .column .box .price sup {
+	font-size: 25px;
+	top: -1em;
+}
 
+.pricing .container .column .box .option ul {
+	margin: 18px 0px;
+	padding: 0;
+}
 
+.pricing .container .column .box .option ul li {
+	list-style: none;
+	color: var(--plain-color);
+	padding: 8px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+}
+
+.pricing .container .column .box .option ul li:last-child {
+	border-bottom: none;
+}
+
+.pricing .container .column .box .option ul li .fa {
+	position: absolute;
+	left: 30px;
+}
+
+.pricing .container .column .box .btn {
+	display: inline-block;
+	background: var(--bg-color);
+	color: #262626;
+	font-weight: bold;
+	padding: 10px 30px;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: 0.2s linear;
+}
+
+.pricing .container .column .box .btn:hover {
+	background: #936e23;
+	color: var(--plain-color);
+}
 
 
 
@@ -1255,6 +1360,13 @@ label.AboutSub {
 	}
 }
 
+@media screen and (max-width:1100px) {
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 6% !important;
+	}
+}
 
 @media screen and (max-width: 992px) {
 	.hamburger {
@@ -1359,11 +1471,99 @@ label.AboutSub {
 	nav.Navtoggle .line:nth-child(2) {
 		width: 25px;
 	}
+
+	.counter-wrap:before {
+		width: 100%;
+	}
+
+	.objective .icon {
+		left: 6% !important;
+	}
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 15% !important;
+	}
+
+	.t-schedule {
+		flex-flow: column;
+	}
+
+	.AboutContent ol {
+		padding: 0px
+	}
+
+	.pricing .container .column {
+		width: 100%;
+	}
+
+	.tab-content .t-schedule>li.active {
+		border-top-color: var(--bg-color);
+		border-width: 1px;
+	}
+
+	.pricing .container .col-lg-4 {
+		margin-bottom: 55px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 10% !important;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	nav.Navtoggle .hamburger {
 		right: 17px;
+	}
+
+	.timesymbol {
+		width: 0px !important;
+	}
+
+	.counter-wrap {
+		align-self: stretch;
+	}
+
+	.counter-wrap:before {
+		height: 20vh;
+	}
+
+	.counter-inner {
+		padding-top: 20px !important;
+		padding: 85px;
+	}
+
+	.counter-inner h2 {
+		margin-left: 0px;
+	}
+
+	.syotimer-cell__value {
+		font-weight: 700;
+		font-size: 35px;
+		line-height: 35px;
+	}
+
+	.syotimer-cell {
+		height: 85px;
+		width: 100px;
+	}
+
+	.tab-content-schedule {
+		padding-right: 10px;
+		padding-left: 45px;
+	}
+
+	.AboutContent li ul {
+		margin-left: 20px;
+	}
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 30% !important;
 	}
 }
 
@@ -1372,10 +1572,38 @@ label.AboutSub {
 	nav.Navtoggle .hamburger {
 		right: 8px;
 	}
+
+	.counter-wrap:before {
+		height: 30vh;
+	}
+
+	.counter-inner .row {
+		flex-flow: column;
+	}
+
+	.counter-inner {
+		padding: 135px;
+	}
+
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 20% !important;
+	}
 }
 
 @media screen and (max-width: 480px) {
 	nav.Navtoggle .hamburger {
 		right: -30px;
+	}
+
+	.syotimer-cell {
+		height: 75px;
+		width: 85px;
+	}
+
+	.syotimer-cell__value {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 28px;
 	}
 }
