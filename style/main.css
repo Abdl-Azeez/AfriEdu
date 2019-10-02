@@ -1628,22 +1628,22 @@ label.AboutSub {
 	}
 
 	.sec1 .banner span {
-		font-size: 35px;
+		font-size: 30px;
 	}
 
 	.subBanner {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.subBanner input {
-		font-size: 13px;
+		font-size: 12px;
 		height: 48px;
 		margin-left: -10px;
 	}
 
 
 	.subBanner button {
-		font-size: 13px;
+		font-size: 12px;
 		height: 48px;
 	}
 
