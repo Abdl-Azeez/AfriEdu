@@ -1592,18 +1592,22 @@ label.AboutSub {
 }
 
 @media screen and (max-width: 480px) {
-	.navbar-brand {
+	.navigation-bar {
+		padding: 0 !important;
+	}
+
+	/* .navbar-brand {
 		font-size: 35px !important
 	}
 
 	.navbar-brand span {
 		font-size: 50px;
-	}
+	} */
 
-	.line {
+	/* .line {
 		width: 45px;
 		height: 10px;
-	}
+	} */
 
 	nav.Navtoggle .hamburger {
 		right: -30px;
@@ -1614,10 +1618,10 @@ label.AboutSub {
 	}
 
 	.sec1 {
-		padding-top: 0;
+		padding-top: 65vh;
 	}
 
-	.sec1 .banner {
+	/* .sec1 .banner {
 		margin-top: -20vh
 	}
 
@@ -1631,7 +1635,7 @@ label.AboutSub {
 
 	.counter-wrap:before {
 		height: 13vh;
-	}
+	} */
 
 	.syotimer-cell {
 		height: 75px;
