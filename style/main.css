@@ -138,7 +138,7 @@ nav ul li a:hover {
 	background: url('/images/09.jpg') no-repeat center 10% fixed;
 	background-size: cover;
 	height: 100vh;
-	overflow: hidden;
+	overflow-y: hidden;
 	padding-top: 10vh;
 	position: relative;
 	display: flex;
@@ -1622,13 +1622,18 @@ label.AboutSub {
 		display: none;
 	}
 
+	.sec1 {
+		padding: 0;
+		height: 100%;
+	}
+
 	.sec1 .banner {
-		margin-top: 22vh;
+		margin-top: 35vh;
 		font-size: 18px;
 	}
 
 	.sec1 .banner span {
-		font-size: 30px;
+		font-size: 23px;
 	}
 
 	.subBanner {
@@ -1649,30 +1654,30 @@ label.AboutSub {
 
 	.counter-wrap {
 		align-self: center;
+		margin-bottom: -12vh;
 	}
 
-	/*
-
-	.subBanner {
-		padding-top: 5vh
-	}
-
-	.timeSymbolContainer {
-		padding-top: 12vh
+	.counter-inner h2 {
+		font-size: 18px;
 	}
 
 	.counter-wrap:before {
-		height: 13vh;
-	} */
+		height: 25vh;
+	}
 
 	.syotimer-cell {
-		height: 75px;
-		width: 85px;
+		height: 70px;
+		width: 70px;
+		padding-top: 10px;
 	}
 
 	.syotimer-cell__value {
 		font-weight: 700;
 		font-size: 28px;
 		line-height: 28px;
+	}
+
+	.syotimer-cell__unit {
+		font-size: 14px;
 	}
 }
