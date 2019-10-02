@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("a").on('click', function (event) {
 
-        if ((this.hash !== "") && (this.hash !== "#carouselCont")) {
+        if ((this.hash !== "") && (this.hash !== "#forDesktop") && (this.hash !== "#forMobile")) {
             event.preventDefault();
 
             const elem = this;
@@ -15,7 +15,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("a").on('click', function (event) {
 
-        if (this.hash === "#carouselCont") {
+        if ((this.hash === "#forDesktop") && (this.hash !== "#forMobile")) {
             event.preventDefault();
         }
     });

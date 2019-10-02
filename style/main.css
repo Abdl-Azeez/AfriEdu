@@ -82,13 +82,15 @@ nav ul li a {
 	text-decoration: none;
 	transition: all 0.5s ease-out;
 }
-nav ul li .button{
+
+nav ul li .button {
 	padding: 10px 25px;
 	background: var(--bg-color);
 	width: 150px;
-	margin:0;
+	margin: 0;
 	border-radius: 7px;
 }
+
 nav ul li a:hover {
 	color: var(--default-color) !important;
 }
@@ -120,10 +122,12 @@ nav ul li a:hover {
 .nav-scroll ul li a {
 	color: var(--default-color) !important;
 }
-.nav-scroll ul li .button{
+
+.nav-scroll ul li .button {
 	background: var(--default-color);
 	color: var(--plain-color) !important;
 }
+
 .nav-scroll ul li a:hover {
 	color: var(--plain-color) !important;
 }
@@ -942,6 +946,14 @@ ol.indicators {
 	margin: 0;
 }
 
+#forMobile {
+	display: none;
+}
+
+#forDesktop {
+	display: block;
+}
+
 .carousel-control-next,
 .carousel-control-prev {
 	top: 50% !important;
@@ -1449,11 +1461,13 @@ ol.indicators {
 		color: var(--default-color) !important;
 		display: inline-block !important;
 	}
+
 	nav.Navtoggle ul li .button {
 		background: var(--default-color);
 		color: var(--plain-color) !important;
 		margin: 12px auto;
 	}
+
 	nav.Navtoggle ul li a:hover {
 		color: rgba(0, 0, 0, 0.6) !important;
 	}
@@ -1725,6 +1739,16 @@ ol.indicators {
 		text-align: left;
 	}
 
+	.AboutContent ol li {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.AboutContent ol li::before {
+		font-size: 13px;
+		--size: 25px;
+	}
+
 	.accordions {
 		width: 100%;
 		padding: 2px !important;
@@ -1735,6 +1759,13 @@ ol.indicators {
 		border-width: 1px !important;
 	}
 
+	#forMobile {
+		display: block;
+	}
+
+	#forDesktop {
+		display: none;
+	}
 
 	.carousel-control-next,
 	.carousel-control-prev {
