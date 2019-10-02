@@ -1375,7 +1375,8 @@ label.AboutSub {
 		margin-right: 0px;
 		cursor: pointer;
 		right: 5%;
-		/* top: 50%; */
+		top: 30%;
+		bottom:0;
 		float: right;
 		/* transform: translate(-5%, -50%); */
 	}
@@ -1419,10 +1420,10 @@ label.AboutSub {
 	nav.Navtoggle ul {
 		display: block;
 		width: 100%;
-		background: #334037e8;
+		background: var(--bg-color);
 		transition: none;
 		height: auto;
-		margin-top: -5px;
+		margin-top: 15px;
 	}
 
 	nav.Navtoggle ul li {
@@ -1613,10 +1614,6 @@ label.AboutSub {
 		width: 45px;
 		height: 10px;
 	} */
-
-	nav.Navtoggle .hamburger {
-		right: -30px;
-	}
 
 	video {
 		display: none;
