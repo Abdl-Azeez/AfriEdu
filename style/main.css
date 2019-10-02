@@ -1592,8 +1592,45 @@ label.AboutSub {
 }
 
 @media screen and (max-width: 480px) {
+	.navbar-brand {
+		font-size: 35px !important
+	}
+
+	.navbar-brand span {
+		font-size: 50px;
+	}
+
+	.line {
+		width: 45px;
+		height: 10px;
+	}
+
 	nav.Navtoggle .hamburger {
 		right: -30px;
+	}
+
+	video {
+		display: none;
+	}
+
+	.sec1 {
+		padding-top: 0;
+	}
+
+	.sec1 .banner {
+		margin-top: -20vh
+	}
+
+	.subBanner {
+		padding-top: 5vh
+	}
+
+	.timeSymbolContainer {
+		padding-top: 12vh
+	}
+
+	.counter-wrap:before {
+		height: 13vh;
 	}
 
 	.syotimer-cell {
