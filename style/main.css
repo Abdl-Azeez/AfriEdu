@@ -1596,13 +1596,18 @@ label.AboutSub {
 		padding: 0 !important;
 	}
 
-	/* .navbar-brand {
-		font-size: 35px !important
+	.navbar-brand {
+		font-size: 18px !important
 	}
 
 	.navbar-brand span {
-		font-size: 50px;
-	} */
+		font-size: 25px;
+	}
+
+	.navbar-brand i {
+		width: 7px;
+		height: 7px;
+	}
 
 	/* .line {
 		width: 45px;
@@ -1617,13 +1622,36 @@ label.AboutSub {
 		display: none;
 	}
 
-	.sec1 {
-		padding-top: 65vh;
+	.sec1 .banner {
+		margin-top: 22vh;
+		font-size: 18px;
 	}
 
-	/* .sec1 .banner {
-		margin-top: -20vh
+	.sec1 .banner span {
+		font-size: 35px;
 	}
+
+	.subBanner {
+		font-size: 14px;
+	}
+
+	.subBanner input {
+		font-size: 13px;
+		height: 48px;
+		margin-left: -10px;
+	}
+
+
+	.subBanner button {
+		font-size: 13px;
+		height: 48px;
+	}
+
+	.counter-wrap {
+		align-self: center;
+	}
+
+	/*
 
 	.subBanner {
 		padding-top: 5vh
