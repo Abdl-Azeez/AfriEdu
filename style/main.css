@@ -1414,13 +1414,14 @@ label.AboutSub {
 
 	nav.Navtoggle .hamburger {
 		position: relative;
-		right: 26px;
+		right: 7px;
+		top: 5px;
 	}
 
 	nav.Navtoggle ul {
 		display: block;
 		width: 100%;
-		background: var(--bg-color);
+		background: var(--hover-color);
 		transition: none;
 		height: auto;
 		margin-top: 15px;
@@ -1431,7 +1432,7 @@ label.AboutSub {
 	}
 
 	nav.Navtoggle ul li a {
-		color: var(--plain-color) !important;
+		color: var(--default-color) !important;
 		display: inline-block !important;
 	}
 
@@ -1517,9 +1518,9 @@ label.AboutSub {
 }
 
 @media screen and (max-width: 768px) {
-	nav.Navtoggle .hamburger {
+	/* nav.Navtoggle .hamburger {
 		right: 17px;
-	}
+	} */
 
 	.timesymbol {
 		width: 0px !important;
@@ -1570,9 +1571,9 @@ label.AboutSub {
 
 @media screen and (max-width: 600px) {
 
-	nav.Navtoggle .hamburger {
+	/* nav.Navtoggle .hamburger {
 		right: 8px;
-	}
+	} */
 
 	.counter-wrap:before {
 		height: 30vh;
