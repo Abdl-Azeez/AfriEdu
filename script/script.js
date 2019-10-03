@@ -33,7 +33,7 @@ addEventListener("load", function () {
 
 const hamburger = document.querySelector('.menu');
 const navLink = document.querySelector('nav');
-const Links = document.querySelectorAll('ul li');
+const Links = document.querySelectorAll('nav ul li');
 const navHeader = document.querySelector('.navigation-bar');
 
 hamburger.addEventListener('click', () => {
