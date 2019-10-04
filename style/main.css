@@ -1959,4 +1959,8 @@ ol.indicators {
 		margin-top: -5px;
 		padding: 6px 15px;
 	}
+
+	.sec4 .container-fluid .col-md-3 {
+		margin-bottom: 40px;
+	}
 }
