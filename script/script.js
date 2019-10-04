@@ -61,7 +61,9 @@ function type() {
 //     $(navHeader).toggleClass('nav-scroll');
 // });
 type();
-AOS.init();
+AOS.init({
+    disable: 'mobile'
+});
 
 addEventListener("load", function () {
     $(window).scroll(function () {

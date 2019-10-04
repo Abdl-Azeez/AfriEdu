@@ -854,6 +854,7 @@ ol.indicators {
 	-webkit-transform: translate3d(0, -20px, 0);
 	transform: translate3d(0, -20px, 0);
 	width: 80%;
+	font-size: 18px;
 }
 
 .speaker p {
@@ -871,7 +872,7 @@ ol.indicators {
 .speaker:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0, -45px, 0);
-	transform: translate3d(0, -45px, 0);
+	transform: translate3d(0, -65px, 0);
 }
 
 .speaker figcaption {
@@ -1175,19 +1176,6 @@ ol.indicators {
 }
 
 
-
-
-/* .column div {
-	position: relative;
-	float: left;
-	 width: 300px;
-	height: 200px;
-	margin: 0 0 0 25px; 
-	padding: 0;
-} */
-
-
-
 .column div span {
 	position: absolute;
 	bottom: -20px;
@@ -1230,7 +1218,7 @@ ol.indicators {
 	content: '';
 	width: 0;
 	height: 0;
-	background: rgba(255, 255, 255, .2);
+	background: var(--hover-color);
 	border-radius: 100%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
