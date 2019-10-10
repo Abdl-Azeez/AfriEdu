@@ -1,0 +1,441 @@
+@media screen and (max-width:1500px) {
+    .sec1 {
+        padding-top: 30vh;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 6% !important;
+    }
+
+    .sec4 .container-fluid .col-md-12 {
+        padding: 0 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hamburger {
+        position: absolute;
+        margin-left: auto;
+        margin-right: 0px;
+        cursor: pointer;
+        right: 5%;
+        top: 30%;
+        bottom: 0;
+        float: right;
+        /* transform: translate(-5%, -50%); */
+    }
+
+    .line {
+        width: 30px;
+        height: 4px;
+        background: var(--default-color);
+        margin: 5px;
+        border-radius: 5px;
+        transition: all 0.5s linear;
+    }
+
+    .nav-scroll .line {
+        background: var(--plain-color);
+    }
+
+    nav ul {
+        margin-left: 0;
+        margin-right: 0;
+        display: none;
+    }
+
+    nav ul li {
+        opacity: 0;
+        display: none;
+
+    }
+
+    nav.Navtoggle {
+        height: 100%;
+        padding-bottom: 0px;
+        border-bottom: none !important;
+    }
+
+    nav.Navtoggle .hamburger {
+        position: relative;
+        right: 7px;
+        top: 5px;
+    }
+
+    nav.Navtoggle ul {
+        display: block;
+        width: 100%;
+        background: var(--bg-color);
+        transition: none;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    nav.Navtoggle ul li {
+        display: block;
+    }
+
+    nav.Navtoggle ul li a {
+        color: var(--default-color) !important;
+        display: inline-block !important;
+    }
+
+    nav.Navtoggle ul li .button {
+        background: var(--default-color);
+        color: var(--plain-color) !important;
+        margin: 12px auto;
+    }
+
+    nav.Navtoggle ul li a:hover {
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    nav.Navtoggle ul li:nth-child(1) {
+        transition: all .3s ease-in;
+    }
+
+    nav.Navtoggle ul li:nth-child(2) {
+        transition: all .5s ease-in;
+    }
+
+    nav.Navtoggle ul li:nth-child(3) {
+        transition: all .7s ease-in;
+    }
+
+    nav.Navtoggle ul li:nth-child(4) {
+        transition: all .9s ease-in;
+    }
+
+    nav.Navtoggle ul li:nth-child(5) {
+        transition: all .11s ease-in;
+    }
+
+    nav.Navtoggle ul li.fade {
+        opacity: 1;
+        display: block;
+    }
+
+
+    nav.Navtoggle .line:nth-child(1) {
+        width: 17px;
+    }
+
+    nav.Navtoggle .line:nth-child(2) {
+        width: 25px;
+    }
+
+    .counter-wrap:before {
+        width: 100%;
+    }
+
+    .objective .icon {
+        left: 6% !important;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 15% !important;
+    }
+
+    .t-schedule {
+        flex-flow: column;
+    }
+
+    .AboutContent ol {
+        padding: 0px
+    }
+
+    .pricing .container .column {
+        width: 100%;
+    }
+
+    .tab-content .t-schedule>li.active {
+        border-top-color: var(--bg-color);
+        border-width: 1px;
+    }
+
+    .pricing .container .col-lg-4 {
+        margin-bottom: 55px;
+    }
+
+    .sec4 .container-fluid .col-md-12 {
+        padding: 0 150px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 10% !important;
+    }
+
+    .sec4 .container-fluid .col-md-12 {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* nav.Navtoggle .hamburger {
+		right: 17px;
+	} */
+
+    .timesymbol {
+        width: 0px !important;
+    }
+
+    .counter-wrap {
+        align-self: stretch;
+    }
+
+    .counter-wrap:before {
+        height: 20vh;
+    }
+
+    .counter-inner {
+        padding-top: 20px !important;
+        padding: 85px;
+    }
+
+    .counter-inner h2 {
+        margin-left: 0px;
+    }
+
+    .syotimer-cell__value {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .syotimer-cell {
+        height: 85px;
+        width: 100px;
+    }
+
+    .tab-content-schedule {
+        padding-right: 10px;
+        padding-left: 45px;
+    }
+
+    .AboutContent li ul {
+        margin-left: 20px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 30% !important;
+    }
+
+    .sec4 .container-fluid .col-md-3 {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* nav.Navtoggle .hamburger {
+		right: 8px;
+	} */
+
+    .counter-wrap:before {
+        height: 30vh;
+    }
+
+    .counter-inner .row {
+        flex-flow: column;
+    }
+
+    .counter-inner {
+        padding: 135px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 20% !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation-bar {
+        padding: 0 !important;
+    }
+
+    .navbar-brand {
+        font-size: 18px !important
+    }
+
+    .navbar-brand span {
+        font-size: 25px;
+    }
+
+    .navbar-brand i {
+        width: 7px;
+        height: 7px;
+    }
+
+    /* .line {
+		width: 45px;
+		height: 10px;
+	} */
+
+    video {
+        display: none;
+    }
+
+    .sec1 {
+        padding: 0;
+        height: 100%;
+    }
+
+    .sec1 .banner {
+        margin-top: 23vh;
+        font-size: 18px;
+    }
+
+    .sec1 .banner span {
+        font-size: 23px;
+    }
+
+    .subBanner {
+        font-size: 12px;
+    }
+
+    .subBanner input {
+        font-size: 12px;
+        height: 48px;
+        margin-left: -10px;
+    }
+
+
+    .subBanner button {
+        font-size: 12px;
+        height: 48px;
+    }
+
+    .counter-wrap {
+        align-self: center;
+        margin-bottom: -12vh;
+    }
+
+    .counter-inner h2 {
+        font-size: 18px;
+    }
+
+    .counter-wrap:before {
+        height: 27vh;
+    }
+
+    .syotimer-cell {
+        height: 70px;
+        width: 70px;
+        padding-top: 10px;
+    }
+
+    .syotimer-cell__value {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .syotimer-cell__unit {
+        font-size: 14px;
+    }
+
+    .topic span {
+        font-size: 28px;
+    }
+
+    .Abt {
+        max-width: 100%;
+    }
+
+    label.AboutSub {
+        padding-top: 0;
+        font-size: 20px;
+    }
+
+    .Abt>div {
+        padding: 10px;
+    }
+
+    .objective-text {
+        padding-left: 32px;
+    }
+
+    .objective h3 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .AboutContent ol li {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .AboutContent ol li::before {
+        font-size: 13px;
+        --size: 25px;
+    }
+
+    .accordions {
+        width: 100%;
+        padding: 2px !important;
+    }
+
+
+    .accordion {
+        border-width: 1px !important;
+    }
+
+    .sec3 {
+        background-position: 10% 50%;
+    }
+
+    #forMobile {
+        display: block;
+    }
+
+    #forDesktop {
+        display: none;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 7% !important;
+    }
+
+    .pricing .container .column .box .title .fa {
+        font-size: 40px;
+    }
+
+    .pricing .container .column .box {
+        max-width: 250px;
+        min-height: 400px;
+    }
+
+    .pricing .container .column .box .price h4 {
+        font-size: 50px;
+    }
+
+    .pricing .container .column .box .price sup {
+        font-size: 18px;
+        top: -1.4em;
+    }
+
+    .pricing .container .column .box .option ul li .fa {
+        left: 15px;
+    }
+
+    .pricing .container .column .box .btn {
+        margin-top: -5px;
+        padding: 6px 15px;
+    }
+
+    .sec4 .container-fluid .col-md-3 {
+        margin-bottom: 40px;
+    }
+}
